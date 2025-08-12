@@ -1,0 +1,35 @@
+.footer {
+    &__container {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrapper--center {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__text {
+        font-family: $font-lato;
+        color: $color-dark-blue;
+
+        &--light {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 26px;
+        }
+
+        &--bold {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 8%;
+        }
+    }
+}

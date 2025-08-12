@@ -1,0 +1,320 @@
+.main {
+    padding: 150px 0 0 0;
+}
+
+// hero
+
+.hero {
+    width: 100%;
+    margin-bottom: 150px;
+
+    &__content {
+        max-width: 523px;
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $font-playfair;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 52px;
+        color: $color-dark-blue;
+        margin-bottom: 20px;
+    }
+
+    &__span {
+        font-family: $font-playfair;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 52px;
+        color: $color-green;
+    }
+
+    &__text {
+        max-width: 439px;
+        width: 100%;
+        font-family: $font-lato;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-dark-blue;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        color: $color-red;
+        font-family: $font-lato;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 8%;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+    }
+
+    &__button::after {
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        width: 102px;
+        height: 13px;
+        background-color: $color-coral-light;
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__button:hover::after {
+        color: $color-coral;
+        background-color: $color-coral;
+    }
+}
+
+// info
+
+.info {
+    position: relative;
+    margin-bottom: 120px;
+
+    &__img {
+        width: 570px;
+        height: 670px;
+    }
+
+    &__img::after {
+        width: 570px;
+        height: 670px;
+        background: linear-gradient(359.55deg, rgba(33, 36, 54, 0.5) 0.64%, rgba(33, 36, 54, 0) 94.04%), url(image2.png);
+        z-index: 1;
+    }
+
+    &__content {
+        max-width: 780px;
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        left: 38%;
+        display: flex;
+        padding: 45px 0;
+        background: #ffffffe3;
+    }
+
+    &__list {
+        max-width: 370px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__number {
+        font-family: $font-playfair;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 72px;
+        color: $color-dark-blue;
+        margin-bottom: 12px;
+    }
+
+    &__span {
+        font-family: $font-playfair;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 50px;
+        color: $color-gray-light;
+        position: relative;
+    }
+
+    &__span::after {
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: -6px;
+        width: 40px;
+        height: 2px;
+        background-color: $color-gray-light;
+        transform: rotate(90deg);
+    }
+
+    &__span::before {
+        background-color: $color-gray-light;
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: -10px;
+        width: 40px;
+        height: 2px;
+        transform: rotate(90deg);
+    }
+
+    &__text {
+        font-family: $font-lato;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-dark-blue;
+    }
+
+    &__line {
+        width: 100px;
+        height: 3px;
+        border: none;
+        border-bottom: 1px solid $color-green;
+        margin: 40px auto;
+    }
+
+    &__description {
+        max-width: 380px;
+        font-family: $font-lato;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-dark-blue;
+    }
+
+    &__description--1 {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        display: inline-block;
+        width: 175px;
+        height: 20px;
+        color: $color-red;
+        font-family: $font-lato;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 8%;
+        text-align: left;
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+    }
+
+    &__button::after {
+        content: '';
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        width: 152px;
+        height: 13px;
+        background-color: $color-coral-light;
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__button:hover::after {
+        color: $color-coral;
+        background-color: $color-coral;
+    }
+}
+
+// benefits
+
+.benefits {
+    margin-bottom: 120px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 60px;
+    }
+
+    &__wrapper {
+        max-width: 570px;
+        width: 100%;
+    }
+
+    &__card {
+        width: 100%;
+        height: 280px;
+        border: none;
+        border-top: 1px solid $color-gray-light;
+        padding: 50px 30px 20px;
+    }
+
+    &__title {
+        font-family: $font-playfair;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: $color-dark-blue;
+        margin-bottom: 30px;
+        max-width: 420px;
+    }
+
+    &__title span {
+        color: $color-green;
+    }
+
+    &__text {
+        font-family: $font-lato;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-dark-blue;
+        max-width: 470px;
+    }
+}
+
+// quote
+
+.quote {
+    margin-bottom: 120px;
+
+    &__container {
+        background-image: url('../img/quote-background.png');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center center;
+        height: 400px;
+        position: relative;
+
+    }
+
+    &__container img {
+        margin-top: 70px;
+        margin-left: 100px;
+        z-index: 2;
+    }
+
+    &__content {
+        position: absolute;
+        top: 100px;
+        left: 160px;
+    }
+
+    &__text {
+        font-family: $font-lato;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: 4%;
+        color: $color-white;
+        max-width: 710px;
+        width: 100%;
+        height: 140px;
+        margin-bottom: 40px;
+    }
+
+    &__author {
+        font-family: $font-playfair;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 8%;
+        font-style: italic;
+        color: $color-white;
+    }
+}
+

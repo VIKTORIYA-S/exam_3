@@ -1,0 +1,58 @@
+@import '_vars';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    background-image: url('../img/first-screen-image.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    height: 100%;
+    margin: 0;
+
+    &::after {
+    content: "";
+        position: absolute;
+        top: 394px;
+        left: 0;
+        right: 0;
+        height: 825px;
+        background-image: url('../img/gradient-for-first-screen.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        pointer-events: none;
+        z-index: 1;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
