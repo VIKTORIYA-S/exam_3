@@ -10,6 +10,10 @@
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 515px) {
+        padding: 10px 0;
+    }
+
      &::after {
         content: '';
         position: absolute;
@@ -19,7 +23,7 @@
         bottom: 0;
         background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.54) 70%);
         backdrop-filter: blur(3px);
-        z-index: -1;
+        z-index: 1;
     }
 
     &__container {
@@ -34,11 +38,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 2;
+
+        @media screen and (max-width: 668px) {
+            margin-right: 20px;
+        }
     }
 
     &__nav {
         max-width: 490px;
         width: 100%;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
 
     &__list {
@@ -84,5 +97,49 @@
         line-height: 24px;
         letter-spacing: 8%;
         color: $color-dark-blue;
+    }
+
+    &__burger {
+        width: 30px;
+        height: 30px;
+        padding-top: 8px;
+        display: none;
+
+        @media screen and (max-width: 600px) {
+            display: block;
+            z-index: 5;
+        }
+    }
+
+    &__line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        border: none;
+        border-bottom: 1px solid $color-dark-blue;
+        background: $color-dark-blue;
+        margin: 5px 0;
+        z-index: 5;
+        position: relative;
+    }
+
+    &__line::before,
+    &__line::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        border: none;
+        background: $color-dark-blue;
+        z-index: 5;
+        position: absolute;
+    }
+
+    &__line::before {
+        top: -8px;
+    }
+
+    &__line::after {
+        bottom: -10px;
     }
 }
