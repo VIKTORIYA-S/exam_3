@@ -1,0 +1,120 @@
+.theme-toggle {
+    display: none;
+}
+
+#theme-toggle:checked ~ .body {
+  background-color: $color-blue-deep;
+  color: white;
+}
+
+#theme-toggle:checked ~ .body .promise__content,
+#theme-toggle:checked ~ .body .info__content {
+  background-color: $color-blue-deep;
+  opacity: 90%;
+}
+
+#theme-toggle:checked ~ .body .wrapper {
+  background-image: url('../img/first-screen-dark.png');
+}
+
+#theme-toggle:checked ~ .body .wrapper::after {
+  background-image: url('../img/gradient-for-first-screen-dark.png');
+}
+
+.theme-toggle-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+#theme-toggle:checked ~ .body .header::after {
+    background: linear-gradient(to right, #1619260f 2%, #16192656 50%);
+        backdrop-filter: blur(5px);
+}
+
+
+
+#theme-toggle:checked ~ .body .header__line,
+#theme-toggle:checked ~ .body .header__line::before,
+#theme-toggle:checked ~ .body .header__line::after {
+    background: $color-white;
+}
+
+#theme-toggle:checked ~ .body .header__link,
+#theme-toggle:checked ~ .body .hero__title,
+#theme-toggle:checked ~ .body .info__number,
+#theme-toggle:checked ~ .body .info__span,
+#theme-toggle:checked ~ .body .benefits__title,
+#theme-toggle:checked ~ .body .promise__description,
+#theme-toggle:checked ~ .body .promise__title,
+#theme-toggle:checked ~ .body .review__title,
+#theme-toggle:checked ~ .body .contact__title,
+#theme-toggle:checked ~ .body .contact__text,
+#theme-toggle:checked ~ .body .contact__input::placeholder,
+#theme-toggle:checked ~ .body .video__title,
+#theme-toggle:checked ~ .body .footer__text {
+    color: $color-white;
+}
+
+#theme-toggle:checked ~ .body .review__text,
+#theme-toggle:checked ~ .body .review__card_text,
+#theme-toggle:checked ~ .body .promise__text,
+#theme-toggle:checked ~ .body .video__text,
+#theme-toggle:checked ~ .body .benefits__text,
+#theme-toggle:checked ~ .body .info__text,
+#theme-toggle:checked ~ .body .info__description,
+#theme-toggle:checked ~ .body .hero__text {
+    color: $color-white;
+    opacity: 80%;
+}
+
+#theme-toggle:checked ~ .body .benefits__card {
+    border-top: $color-gray-dark 1px solid;
+    opacity: 50%;
+}
+
+#theme-toggle:checked ~ .body .contact__container,
+#theme-toggle:checked ~ .body .footer__container {
+  border-top: #515773d3 1px solid;;
+}
+
+#theme-toggle:checked ~ .body .footer__text--light {
+    color: $color-white;
+    opacity: 60%;
+}
+
+#theme-toggle:checked ~ .body .video__wrapper {
+    border: #515773d5 1px solid;
+}
+
+
+#theme-toggle:checked ~ .body .hero__span,
+#theme-toggle:checked ~ .body .benefits__title span,
+#theme-toggle:checked ~ .body .video__span,
+#theme-toggle:checked ~ .body .review__span,
+#theme-toggle:checked ~ .body .contact__span {
+    color: $color-blue;
+}
+
+#theme-toggle:checked ~ .body .btn {
+    color: $color-green-neon;
+    background-color: transparent;
+}
+
+#theme-toggle:checked ~ .body .btn::after {
+  background-color: $color-green-neon;
+  opacity: 30%;
+}
+
+#theme-toggle:checked ~ .body .promise__button-wrapper {
+  border: 1px solid #e4e4e45c;
+}
+
+#theme-toggle:checked ~ .body .contact__input  {
+    background-color: transparent;
+    border-bottom: #ffffff1c 1px solid;
+}
+
+#theme-toggle:checked ~ .body .header__item::after {
+    background: linear-gradient(to right, #53f3ce7e, #53f3ce08);
+}
+

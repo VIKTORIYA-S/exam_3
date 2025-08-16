@@ -3,6 +3,7 @@
         padding: 30px 0;
         display: flex;
         justify-content: space-between;
+        border-top: 1px solid $color-gray-light;
 
         @media screen and (max-width: 760px) {
             flex-wrap: wrap;

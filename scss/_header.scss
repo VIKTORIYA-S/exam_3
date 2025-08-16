@@ -46,16 +46,16 @@
     }
 
     &__nav {
-        max-width: 490px;
+        max-width: 560px;
         width: 100%;
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 740px) {
             display: none;
         }
     }
 
     &__list {
-        max-width: 490px;
+        max-width: 560px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -100,15 +100,22 @@
     }
 
     &__burger {
-        width: 30px;
+        width: 75px;
         height: 30px;
         padding-top: 8px;
         display: none;
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 740px) {
             display: block;
             z-index: 5;
         }
+    }
+
+    &__toggle {
+        width: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__line {
@@ -142,4 +149,9 @@
     &__line::after {
         bottom: -10px;
     }
+}
+
+.theme-toggle-icon {
+    width: 20px;
+    height: 20px;
 }
